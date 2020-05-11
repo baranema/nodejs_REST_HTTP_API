@@ -1,0 +1,797 @@
+:root {
+    --header-color: white;
+    --font-color: black;
+    --bg-color: #f5f5f5;
+    --blue-color: #263d5e;
+    --linkhover-color: #1c1c1c;
+    --green-color: #bfd5d3;
+    --gray-color: lightgray;
+}
+
+.text {
+    
+    color:red;
+    background-color: blue;
+}
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+}
+
+a:link {
+    color: gray;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--green-color);
+}
+
+a:visited {
+    color: var(--gray-color);
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 160%;
+    padding: 20px;
+    text-align: center;
+}
+
+.sectionEnd {
+    margin: 30px;
+    padding: 20px 0;
+    border-top: 1px solid var(--gray-color);
+}
+
+/*
+--------------
+NAVIGATION BAR 
+--------------
+*/
+
+h1 {
+    text-decoration: none;
+    display: inline;
+    padding: 0 50px;
+    color: var(--bg-color);
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+#navbar {
+    display: block;
+    width: 100%;
+    top: 0;
+    right:0;
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    padding: 12px 20px 25px;
+}
+
+#navbar a {
+    color: var(--gray-color);
+    font-size: smaller;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-top: 0.9px solid var(--gray-color);
+    margin: 25px 25px 20px;
+    padding: 5px;
+}
+
+#navbar a:hover {
+    color: var(--linkhover-color);
+    border-top: 1px solid var(--linkhover-color);
+}
+
+#navbar a:active {
+    background-color: white;
+    color: black;
+}
+
+#navbar h1:hover {
+    color: var(--green-color);
+}
+
+.searchBar {
+    display: inline-block;
+    margin: 25px 25px 0;
+}
+
+.searchBar button {
+    height: 27px;
+    border: 1px solid var(--bg-color);
+    background: var(--bg-color);
+    text-align: center;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.searchBar button:hover {
+    background: black;
+    color: white;
+}
+
+.searchBar input {
+    border: 1px solid var(--bg-color);
+    padding: 6px;
+    height: 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: var(--bg-color);
+    background-color: black;
+    font-size: 10px;
+}
+
+/*
+--------------
+LOTTERY HEADER
+--------------
+*/
+
+#lottery {
+    background-image: url("https://i.ibb.co/ynVnNnD/elsetge-cat-wallpaper-hd-for-desktop-1021311.png");
+    background-position: 50% 30%;
+    background-repeat: repeat-y;
+    background-size: 100%;
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    margin-left: 0;
+    margin-top: 75px;
+    padding: 80px 0;
+    text-align: center;
+}
+
+#lottery a {
+    font-variant: inherit;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    color: var(--green-color);
+    font-weight: 200;
+}
+
+#lottery a:hover {
+    color: white;
+}
+
+/*
+--------------------
+TOP SELLING PRODUCTS
+--------------------
+*/
+
+#imageHeader, #brandHeader, #osHeader, #modelHeader, #sizeHeader {
+    background-color: black;
+    color: white;
+}
+
+#brandHeader:hover, #osHeader:hover, #modelHeader:hover, #sizeHeader:hover {
+    background-color: #1c1c1c;
+}
+
+.mytable {
+    font-size: 80%;
+    width: 80%;
+    text-align: center;
+    margin-left:auto; 
+    margin-right:auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--font-color);
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.mytable th {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+.mytable td:hover {
+    background-color: white;
+}
+
+.mytable img {
+    vertical-align: baseline;
+    width: 220px;
+    height: 220px;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], .deleteButton, .editButton { 
+    padding: 10px 20px ;
+    border: 1px solid black;
+    background: black;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-top: 30px;
+}
+
+.deleteButton {
+    color: rgb(207, 75, 66);
+}
+
+.deleteButton:hover {
+    color: rgb(207, 75, 66, 0.7);
+}
+
+.editClick {
+    color: gray;
+    cursor: default;
+}
+
+.editButton:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.saveButton {
+    display: none;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { 
+    border: 1px solid white;
+    background: var(--green-color);
+    color: white;
+}
+
+#employeeInput input{
+    background-color: var(--bg-color);
+    border: none;
+    padding: 10px 50px;
+    height: 13px;
+    outline: none;
+    color: black;
+    font-size: 10px;
+}
+
+#employeeInput input:hover, td:hover {
+    background-color: white;
+    
+}
+
+/*
+---------------
+LOTTERY SECTION
+---------------
+*/
+
+#prizes {
+    background-color: black;
+    color: white;
+}
+
+#prizes table {
+    width: 70%;
+    border: solid 0.5px white;
+}
+
+#prizes td:hover {
+    background-color: black;
+    color: gray;
+}
+
+#prizeName:hover, #prizeWinners:hover {
+    background: white;
+    color: black;
+}
+
+#prizes caption {
+    caption-side: top;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+#prizeImg {
+    width: 30%;
+}
+#prizes img {
+    width: 300px;
+    height: 300px;
+}
+
+#prizes .sectionEnd {
+    visibility: hidden;
+    padding: 30px;
+}
+
+#prizes h2 {
+    padding-top: 50px;
+}
+
+#prizes ol {
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#stepsWrapper {
+    margin-bottom: 60px;
+    text-align: center;
+    margin-right: 35px;
+}
+
+#prizes li:hover {
+    color: var(--green-color);
+}
+
+/*
+-------------
+ABOUT SECTION
+-------------
+*/
+
+#content 
+{
+    font: normal normal 14px/150% 'Open Sans', sans-serif;
+    width: 75%;
+    text-align: justify;
+    margin: 0 auto;
+    text-indent: 40px;
+}
+
+.googlemap iframe {
+    width: 60%;
+    height: auto;
+    margin: 0 20%;
+}
+
+/*
+---------
+OUR STAFF
+---------
+*/
+
+#staff {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#staff img {
+    width: 550px;
+    float: none;
+}
+
+#staff dl {
+    display: inline-block;
+    font-size: larger;
+    text-align: left;
+    padding: 0 20px;
+    border-top: 1px solid var(--gray-color);
+}
+
+#staff dt {
+    color: var(--blue-color);
+    margin-top: 26px;
+}
+
+#staff dd {
+    display: list-item;
+    list-style: inside;
+    list-style-type: circle;
+    font-size: 70%;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+#staff .sectionEnd {
+    margin-top: 50px;
+}
+
+/* 
+--------
+FEEDBACK
+--------
+*/
+
+#feedback h2 {
+    border: 5px solid var(--green-color);
+    border-spacing: 20px;
+    width: 25%;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+}
+
+#feedbackForm {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#feedbackForm input {
+    padding: 10px;
+}
+
+#feedback figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+}
+
+#feedback figure figcaption {
+    text-align: center;
+    font-size: 80%;
+    text-decoration: overline;
+    padding: 10px;
+    color: var(--font-color);
+}
+
+#feedback figure figcaption:hover {
+    color: var(--green-color);
+}
+
+#feedback .sectionEnd {
+    margin-top: 50px;
+}
+
+/*
+--------
+EMAIL US
+--------
+*/
+
+#emailUs {
+    text-align: center;
+}
+
+#emailUs input[type="text"], textarea {
+    border: 1px solid var(--font-color);
+    padding: 6px;
+    height: 13px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    background-color: var(--bg-color);
+    font-size: 10px;
+}
+
+#emailUs input[type="text"]:focus, textarea:focus {
+    background-color: var(--green-color);
+}
+
+textarea {
+    height: 100px;
+}
+
+#emailUs input[type="submit"], input[type="reset"] {
+    display: inline;
+}
+
+#emailUs .sectionEnd {
+    visibility: hidden;
+}
+
+/*
+------
+FOOTER
+------
+*/
+
+footer {
+    padding: 50px 0 30px;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+}
+
+footer pre {
+    color: var(--green-color);
+    font-size: 65%;
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin-right: 5%;
+}
+
+footer ul {
+    list-style-image: url("https://i.ibb.co/FKwRpn7/bullet-point.png");
+    font-size: 60%;
+    text-align: center;
+    margin-right: 50px;
+    color: var(--green-color);
+    list-style-position: inside;
+}
+
+/*
+------------------
+RESPONSIVE WEBSITE
+------------------
+*/  
+
+@media all and (max-width: 649px) {
+    #navbar a {
+        font-size: 75%;
+        margin: 7px;
+    }
+    #navbar {
+	font-size:70%;
+    }
+
+    h1 {
+        padding: 0 5px 5px;
+        display: block;
+    }
+    nav {
+        margin-left: 40px;
+    }
+    
+    .mytable th, td {
+        font-size: 70%;
+    }
+    
+    #content {
+        font-size: 60%;
+    }
+    
+    #feedback h2 {
+        font-size: 90%;
+        width: 25%;
+        padding: 2%;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .searchBar {
+        display:none
+    }
+    #navbar a {
+        font-size: 80%;
+        margin: 17px;
+    }
+    
+    .mytable img {
+        width: 95%;
+        height: auto;
+    }
+    
+    .mytable th, td {
+        font-size: 85%;
+        width: 5%;
+    }
+    
+     #employeeInput input[type="text"] {
+            width: 5%;
+            padding: 5px;
+            font-size: 70%;
+            height: auto;
+        }
+    
+    #employeeInput input[type="url"] {
+            width: 5%;
+            padding: 5px;
+            font-size: 70%;
+            height: auto;
+        }
+    
+    #employeeInput input[type="number"]
+        {
+            width: 5%;
+            padding: 5px;
+            font-size: 70%;
+            height: auto;
+        }
+    #stepsWrapper li {
+        font-size: 90%;
+    }
+    
+    #content {
+        font-size: 85%;
+    }
+    
+    #feedback h2 {
+        font-size: 120%;
+        width: 25%;
+    }
+}
+
+@media all and (max-width: 954px) {
+   .searchBar {
+        display: none;
+    }
+    #navbar {
+        padding: 20px;
+    }
+    
+    #lottery {
+        padding-bottom: 7%;
+    }
+    
+    .mytable img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .mytable th, td {
+        width: 10%;
+    }
+
+    #employeeInput input[type="url"]::placeholder, input[type="text"]::placeholder, input[type="number"]::placeholder {
+        color:transparent;
+        }
+    
+    #staff {
+        font-size: 85%;
+        display: block;
+    }
+    
+    #staff dt {
+        margin: 5px;
+    }
+    
+    #staff img {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    footer pre {
+        font-size: 55%;
+    }
+}
+
+
+@media all and (max-width: 520px) {
+     #navbar a {
+        font-size: 70%;
+        margin: 12px;
+    }
+    
+    #lottery {
+        font-size: 1.5em;
+        background-size: auto;
+        padding-bottom: 10px;
+    }
+    
+    .mytable th, td {
+        font-size: 70%;
+    }
+    
+    #content {
+        font-size: 65%;
+        text-indent: 20px;
+    }
+    
+    footer pre {
+        font-size: 35%;
+    }
+    
+    #feedback h2 {
+        font-size: 80%;
+        width: 30%;
+        border:none;
+    }
+}
+
+@media all and (max-width: 430px) {
+     #navbar a {
+        font-size: 55%;
+        margin: 10px;
+    }
+    h1 {
+        padding: 0;
+        font-size: 90%;
+    }
+    
+    #lottery {
+        font-size: 60%;
+        padding-bottom: 30px;
+    }
+    
+    .mytable th, td {
+        font-size: 50%;
+    }
+    
+    #content {
+        font-size: 55%;
+    }
+    
+    #staff {
+        font-size: 70%;
+    }
+    
+    footer pre {
+        font-size: 25%;
+    }
+}
+
+@media all and (max-width: 1175px) {
+    .mytable {
+        width: 80%;
+    }
+        
+    #employeeInput input[type="text"] {
+            width: 20%;
+            height: auto;
+        }
+    
+    #employeeInput input[type="url"] {
+            width: 20%;
+            height: auto;
+        }
+    
+    #employeeInput input[type="number"]
+        {
+            width: 20%;
+            height: auto;
+        }
+    
+    #prizes .mytable caption {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #prizes .mytable th {
+        width: 20%;
+    }
+    
+    #prizes .mytable td {
+        width: 20%;
+    }
+    
+    #prizes .mytable img {
+        width: 75%;
+        height: auto;
+    }
+    
+}
+
+@media all and (max-width: 370px) {
+     #navbar a {
+        font-size: 40%;
+        margin: 3px;
+    }
+    
+    h1 {
+        padding: 0;
+        font-size: 70%;
+    }
+    
+    #lottery h2 {
+        padding-bottom: 20px;
+    }
+    
+    #lottery h2 a {
+        font-size: 70%;
+    }
+    
+    .mytable th, td {
+        font-size: 30%;
+    }
+    
+    #feedbackForm {
+        font-size: 80%;
+    }
+    
+    footer pre {
+        font-size: 5%;
+    }
+}

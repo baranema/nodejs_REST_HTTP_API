@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Screen.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">   
+    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+
+</head>
+    
+<body>
+    <div id="navbar">
+        <nav>
+            <h1><abbr title="Assignment 1">AS-ONE</abbr></h1>
+            <a href="#">Home</a> 
+            <a href="#about">About us</a> 
+            <a href="#emailUs">Email Us</a> 
+            <a href="#staff">Staff</a> 
+            <a href="#feedback">Leave a feedback</a> 
+            <form class="searchBar" action="#">
+              <input type="text" placeholder="search.." name="search">
+              <button type="submit">&#10095;</button>
+            </form>
+        </nav>
+    </div>
+    
+    <div id="lottery">
+        <h2>Limited time lottery! <a href="#prizes"><em>&#8594; click here &#8592;</em></a></h2>
+    </div>
+    
+    <section id="topProducts">
+        <h2>Top selling products</h2>
+        <form id="submitForm">
+            <table class="mytable" border="1">
+                <tr>
+                    <th id="imageHeader">Image</th>
+                    <th id="brandHeader">Brand</th>
+                    <th id="modelHeader">Model</th>
+                    <th id="osHeader">Operating system</th>
+                    <th id="sizeHeader">Size (inches)</th>
+                </tr>
+
+                <tr id="employeeInput">
+                    <td>
+                        <input type="url" name="image" placeholder="image" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="brand" placeholder="brand" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="model" placeholder="model" required>
+                    </td>
+
+                    <td>
+                        <input type="text" name="os" placeholder="operating system" required>
+                    </td>
+
+                    <td>
+                        <input type="number" name="screensize" placeholder="screensize" required>
+                    </td>
+                </tr>
+            </table>  
+        </form>
+        <input id="submitInput" type="button" name="submit" value="submit" form="submitForm"/>
+        <input id="resetButton" type="button" name="reset" value="reset"/> 
+        <div class="sectionEnd"></div>
+     </section>  
+    
+     <section id="prizes">        
+         <h2>Win prizes!</h2>
+
+         <div id="stepsWrapper">
+             <ol type="1">
+                 <li>Follow us on Instagram (@assignment1)</li>
+                 <li>Like us on Facebook (Assignment One)</li>
+                 <li>Share us on your Instagram story</li>
+             </ol>
+        </div>
+        
+         <table class="mytable" border="1">
+            <caption>What you can win:</caption>
+            <tr>
+                <th id="prizeImg">Image</th>
+                <th id="prizeName">Prize name</th>
+                <th id="prizeWinners">Number of winners</th>
+            </tr>
+
+            <tr class="prizes">
+                <td>
+                    <img src="https://cpple.pl/3892-large_default/macbook-pro-13-touch-bar-i-touch-id.jpg" alt="Macbook Pro">
+                </td>
+                <td class="name">Macbook Pro</td>
+                <td class="winners">1</td>
+            </tr>
+             
+            <tr class="prizes">
+                <td>
+                    <img src="https://www02.cp-static.com/objects/high_pic/6/61e/1351042277_smartwatches-apple-watch-s5-40-gold-alu-rose-sport-mwv72nf-a.jpg" alt="Apple Watch">
+                </td>
+                <td class="name">Apple Watch</td>
+                <td class="winners">5</td>
+            </tr>
+             
+             <tr class="prizes">
+                <td>
+                    <img src="https://www.amac.nl/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_mtem2_1.jpg" alt="iPad Pro">
+                </td>
+                <td class="name">iPad Pro</td>
+                <td class="winners">2</td>
+            </tr>
+             
+             <tr class="prizes">
+                <td>
+                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5%2C0.5&.v=1572990352299" alt="Airpods 2">
+                </td>
+                <td class="name">Airpods 2</td>
+                <td class="winners">10</td>
+             </tr>
+             
+        </table>
+     <div class="sectionEnd"></div>
+     </section>
+    
+     <section id="about">        
+         <h2>About us</h2>
+         
+         <div id="content">
+         <p>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras euismod mauris id aliquet tristique. Curabitur non elit gravida, varius diam nec, eleifend dolor. Curabitur ut ante auctor, tincidunt nisi sed, dapibus nibh. Curabitur tristique viverra ornare. Integer nec enim ac risus tincidunt elementum nec sit amet mi. Duis auctor ultrices fringilla. Aliquam blandit tellus in neque consequat, a posuere metus blandit. Aliquam placerat, mauris vel malesuada placerat, arcu leo aliquet justo, vel congue lacus dolor vitae magna. Cras eget placerat felis. Aenean cursus justo vel rhoncus maximus. Nullam feugiat tempus diam, vel condimentum sem fringilla quis. Suspendisse hendrerit justo in massa lacinia, pellentesque tempor purus pellentesque. Nunc imperdiet nisl nec ex condimentum, ut ultricies turpis congue.
+         </p>
+         
+         <p>
+             Integer pretium vehicula vulputate. Suspendisse convallis orci lacinia, molestie justo vel, interdum nulla. Aliquam molestie sapien ullamcorper nunc elementum euismod. Vestibulum augue sem, dapibus vel interdum ut, commodo quis nunc. Donec facilisis dolor at rutrum pulvinar. Morbi lacinia massa sit amet eros lobortis, ac convallis magna rutrum. Sed quam mauris, commodo ut suscipit et, lobortis ac erat. Nulla sollicitudin, tellus sit amet fringilla convallis, nibh ipsum lobortis magna, dignissim fermentum ex nunc vitae neque. In congue, urna sed varius egestas, mi nibh placerat mi, eleifend aliquam dolor lacus vel risus. Donec eleifend id justo sed auctor. Cras mollis vel libero a congue. Etiam vulputate pretium elementum. Morbi posuere dolor quis neque sollicitudin auctor. Fusce vel elit et mauris lobortis dignissim eu vel libero. Duis laoreet tincidunt est, nec sodales urna congue viverra.
+         </p>
+             
+          <p>
+             Praesent vel tincidunt mauris, in varius erat. Mauris vel nunc venenatis, dignissim eros eu, vulputate sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc nibh velit, ultrices nec bibendum in, malesuada sed libero. Donec commodo, nibh eu sagittis aliquet, augue enim finibus nunc, at egestas lectus sapien vel nisi. Aliquam bibendum, mauris vel iaculis varius, arcu enim luctus mauris, in rhoncus lacus nisl vitae nulla. Nunc tincidunt, eros non accumsan tempor, urna ante ullamcorper nibh, sed faucibus lectus sapien id ante. Donec fermentum diam consectetur sapien feugiat efficitur. Aenean pellentesque ligula sit amet tristique facilisis. Maecenas venenatis ornare vestibulum. Sed in congue eros. Donec in maximus metus. Nam massa lacus, ornare id finibus vel, porta eget lectus. Cras imperdiet eu arcu nec sodales. Integer eu egestas orci, non vulputate mi. Curabitur ultricies massa vitae fermentum posuere. Duis placerat orci purus, nec maximus risus posuere eget. Cras non sem vulputate, fermentum lectus in, sagittis felis. Pellentesque non mi orci. Etiam rutrum sagittis dolor ac fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tempor finibus consequat. Sed tellus nunc, aliquet nec placerat at, porttitor vel lacus. Duis eu risus tincidunt, luctus ex vel, convallis urna. Nunc rutrum euismod consectetur. Sed nisi enim, egestas eget lobortis a, congue eget eros. Vestibulum tempus orci porttitor, auctor augue vitae, suscipit ex. Praesent venenatis tincidunt eros, sed tempus urna tristique vitae. Fusce augue sem, ornare porttitor eros ac, tincidunt euismod tortor.
+         </p>
+             
+         </div>
+         
+         <div class="googlemap">
+           <iframe http://src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.021460253912!2d4.86353121573478!3d52.333756779779335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60a085c443af1%3A0x2df2d7a997eccd84!2sVrije%20Universiteit%20Amsterdam!5e0!3m2!1slt!2snl!4v1578505143982!5m2!1slt!2snl" 
+              frameborder="0" scrolling="no">
+           </iframe>
+         </div>
+     <div class="sectionEnd"></div>
+     </section>
+    
+     <section id="staff">        
+         <h2>Meet our staff</h2>
+         <img src="https://images.pexels.com/photos/1024248/pexels-photo-1024248.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="staff">
+         <dl>
+            <dt><strong>Iva Gunjača</strong></dt>
+            <dd>co-founder</dd>
+            <dt><strong>Emilija Baranauskaitė</strong></dt>
+            <dd>co-founder</dd>
+            <dt><strong>George Amsterdam Gunjača</strong></dt>
+            <dd>CEO</dd>
+            <dt><strong>Bora Dervishi</strong></dt>
+            <dd>Manager</dd>
+            <dt><strong>Tina Gurakuqi</strong></dt>
+            <dd>Customer service assistant</dd>
+         </dl>
+      <div class="sectionEnd"></div>
+      </section>
+    
+    
+      <section id="feedback">        
+         <h2>Leave a feedback!</h2>
+         <form action="#" id="feedbackForm">
+             <p>Rate your experience</p>
+             <input type="radio" name="feedback" value="Excellent">Excellent<br>
+             <input type="radio" name="feedback" value="Very good">Very good<br>
+             <input type="radio" name="feedback" value="Good">Good<br>
+             <input type="radio" name="feedback" value="Bad">Bad<br>
+             <input type="radio" name="feedback" value="Very Bad">Very Bad<br>
+             <input type="submit"  name="submit" value="submit">
+        </form>
+         <figure>
+             <img src="https://projul.com/wp-content/uploads/2019/07/thank-you.jpg">
+             <figcaption>Thank you for your feedback!</figcaption>
+         </figure>
+      <div class="sectionEnd"></div>
+      </section>
+    
+      <section id="emailUs">        
+         <h2>Send email right away!</h2>
+         <form action="mailto:assignment1@email.com" method="post">
+            <p>E-mail:</p>
+            <input type="text" name="mail">
+            <p>Name:</p>
+            <input type="text" name="name">
+            <p>Comment:</p>
+            <textarea name="comment" rows="10" cols="30"></textarea>
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="clear">
+         </form>
+      <div class="sectionEnd"></div>
+      </section>
+    
+      <footer>
+           <pre>
+ Mauris et libero     tristique ultrices
+     nec metus mollis tristique. Fusce vel elit et mauris lobortiss nunc.
+     Donec 
+        facilisis dolor at rutrum pulvinar. Morbi lacinia massa sit amet eros lobortis, ac convallis magna rutrum. Sed quam mauris,
+        commodo ut suscipit et,
+    lobortis ac erat. Nulla sollicitudin, tellus sit amet fringilla convallis, 
+     nibh ipsum lobortis magna, dignissim
+     fermentum ex nunc vita
+     Nullam tristique aliquam dolor,
+              vitae hendrerit mauris ultrices in.
+  Sed volutpat enim lectus. Fusce vel elit et mauris lobortis.
+ a aliquet dolor hendrerit ac.
+           </pre>
+           <p>&#9400; 2020 Assignment One</p>
+          
+           <ul>
+               <li>Instagram: <a href="https://www.instagram.com/assignment1/">@assignment1</a></li>
+               <li>Email: <a href="mailto:assignment1@email.com">assignment1@email.com</a></li>
+               <li>Phone number: 123456789</li>
+               <li>Facebook: Assignment One</li>
+            </ul>
+      </footer>
+</body>
+</html>
+
+<!--
+
+Browser compatibility report 
+
+We tested our website on two web browsers - google chrome and safari. Both of these worked well. However, on google chrome, we noticed that there were some CSS decorations were not present using the safari web browser. For instance, <abbr> which we used on <h1> tag had a dotted underline. Therefore, we removed it by CSS line “text-decoration: none”. 
+
+Both Screen.css and Print.css are responsive by using media queries. Thus, checking the website on the device and printing would not cause a lot of issues. Moreover, the Print.css (grayscale) stylesheet is divided into six parts by using the page-break construct. Therefore, we have a navigation bar and top products, prizes section, about us section, staff section, feedback section, email form, and footer section.
+
+Our website was primarily created in Safari. Hence, we think it worked the best on this browser. By using multiple media queries we made it act responsively according to screen size. Consequently, our submission has only two CSS files. 
+
+-->
