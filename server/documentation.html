@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 3</title>
+    <meta charset="UTF-8">
+</head>
+    
+<body>
+    <h1>Server.js documentation - lab group 126</h1>
+    <p>This is REST (Representational state transfer) HTTP API server</p>
+    <h3>Our web service provides our clients with the following functionality:</h3>
+    <ol>
+        <li>CRUD (Create, Retrieve, Update and Delete) interface on single rows.</li>
+        <li>Adds data for a new product item</li>
+        <li>Lists the data of a specific item</li>
+        <li>Updates the data of a specific item</li>
+        <li>Removes the data of a specific item</li>
+    </ol>
+    
+    <h3>Server can be started by using the "npm start" command. Installing cors, express and body-parser is also required.</h3>
+    <p>You can run our server on your website with AJAX. For instance, our website index.html is adapted for such use.</p>
+    <h3>End-points</h3>
+    <ul>
+        <li>http://localhost:3000/ - using GET method displays general information about the server.</li>
+        <li>http://localhost:3000/phones - using GET method displays all products from database.</li>
+        <li>http://localhost:3000/phones/id - using GET method displays a specific item of a given id.</li>
+        <li>http://localhost:3000/phones/brand - using GET method displays a specific items of a given brand.</li>
+        <li>http://localhost:3000/phones - using POST method adds new item to database.</li>
+        <li>http://localhost:3000/phones/id - using PUT method updates a specific item.</li>
+        <li>http://localhost:3000/phones/delete/id - using DELETE method deletes a specifid item.</li>
+        <li>http://localhost:3000/phones/reset - using DELETE method deletes all items.</li>
+    </ul>
+    
+    <h5>Assignment 3 - Emilija Baranauskaite, Iva Gunjaca</h5>
+</body>
+</html>
